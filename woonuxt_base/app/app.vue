@@ -20,6 +20,9 @@ watch(
 
 useHead({
   titleTemplate: `%s - ${siteName}`,
+  htmlAttrs: {
+      dir: 'rtl'
+    }
 });
 </script>
 
