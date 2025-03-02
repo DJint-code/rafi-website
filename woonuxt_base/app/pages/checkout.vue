@@ -85,8 +85,8 @@ useSeoMeta({
         <div class="grid w-full max-w-2xl gap-8 checkout-form md:flex-1">
           <!-- Customer details -->
           <div v-if="!viewer && customer.billing">
-            <h2 class="w-full mb-2 text-2xl font-semibold leading-none">Contact Information</h2>
-            <p class="mt-1 text-sm text-gray-500">Already have an account? <a href="/my-account" class="text-primary text-semibold">Log in</a>.</p>
+            <h2 class="w-full mb-2 text-2xl font-semibold leading-none">פרטי קשר</h2>
+            <p v-if="false" class="mt-1 text-sm text-gray-500">Already have an account? <a href="/my-account" class="text-primary text-semibold">Log in</a>.</p>
             <div class="w-full mt-4">
               <label for="email">{{ $t('messages.billing.email') }}</label>
               <input
@@ -113,7 +113,7 @@ useSeoMeta({
                 <PasswordInput id="password" class="my-2" v-model="orderInput.password" placeholder="••••••••••" :required="true" />
               </div>
             </template>
-            <div v-if="!viewer" class="flex items-center gap-2 my-2">
+            <div v-if="false && !viewer" class="flex items-center gap-2 my-2">
               <label for="creat-account">Create an account?</label>
               <input id="creat-account" v-model="orderInput.createAccount" type="checkbox" name="creat-account" />
             </div>

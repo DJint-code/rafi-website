@@ -135,6 +135,33 @@
                 "subText": "נסה לשנות את החיפוש או את המסנן כדי למצוא את מה שאתה מחפש.",
                 "clearFiltersAndSearch": "נקה את כל המסננים וחפש מחדש"
             }
+        },
+        "billing": {
+            "billing": "חיוב",
+            "billingDetails": "פרטי חיוב",
+            "firstName": "שם פרטי",
+            "lastName": "שם משפחה",
+            "address1": "כתובת",
+            "address2": "דירה / כניסה",
+            "city": "עיר",
+            "state": "מדינה / מחוז",
+            "zip": "מיקוד",
+            "country": "ארץ",
+            "countryCode": "קוד ארץ",
+            "phone": "טלפון",
+            "email": "דוא\"ל",
+            "paymentOptions": "אפשרויות תשלום",
+            "creditCard": "כרטיס אשראי",
+            "cashOnDelivery": "תשלום במזומן בעת מסירה",
+            "differentAddress": "לשלוח לכתובת שונה?"
+        },
+        "error": {
+            "invalidUsername": "לא נמצא חשבון עם שם משתמש זה. הירשם לחשבון חדש.",
+            "incorrectPassword": "סיסמה שגויה. אנא נסה שוב.",
+            "passwordMismatch": "הסיסמאות אינן תואמות. אנא נסה שוב.",
+            "invalidPasswordResetLink": "קישור לאיפוס הסיסמה אינו תקף.",
+            "general": "משהו השתבש",
+            "noOrder": "לא הצלחנו למצוא את ההזמנה שלך. אנא נסה שוב מאוחר יותר."
         }
     }
 }

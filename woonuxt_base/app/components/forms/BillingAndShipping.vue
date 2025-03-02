@@ -39,16 +39,6 @@
       </div>
 
       <div class="w-full">
-        <label for="billing-state">{{ $t('messages.billing.state') }} ({{ $t('messages.general.optional') }})</label>
-        <StateSelect id="billing-state" v-model="customer.billing.state" :default-value="customer.billing.state" :country-code="customer.billing.country" />
-      </div>
-
-      <div class="w-full">
-        <label for="billing-country">{{ $t('messages.billing.country') }}</label>
-        <CountrySelect id="billing-country" v-model="customer.billing.country" :default-value="customer.billing.country" />
-      </div>
-
-      <div class="w-full">
         <label for="billing-zip">{{ $t('messages.billing.zip') }}</label>
         <input id="billing-zip" v-model="customer.billing.postcode" placeholder="10001" autocomplete="postal-code" type="text" />
       </div>
