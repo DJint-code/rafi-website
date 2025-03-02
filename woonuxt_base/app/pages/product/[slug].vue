@@ -4,7 +4,7 @@ import { StockStatusEnum, ProductTypesEnum, type AddToCartInput } from '#woo';
 const route = useRoute();
 const { storeSettings } = useAppConfig();
 const { arraysEqual, formatArray, checkForVariationTypeOfAny } = useHelpers();
-const { addToCart, isUpdatingCart } = useCart();
+const { addToCart, isUpdatingCart, toggleCart } = useCart();
 const { t } = useI18n();
 const slug = route.params.slug as string;
 
@@ -35,6 +35,11 @@ const mergeLiveStockStatus = (payload: Product): void => {
     }
   });
 };
+
+const addProductToCart = async () => {
+  await addToCart(selectProductInput.value);
+  toggleCart(true);
+}
 
 onMounted(async () => {
   try {
@@ -120,7 +125,7 @@ const disabledAddToCart = computed(() => {
 
           <hr />
 
-          <form @submit.prevent="addToCart(selectProductInput)">
+          <form @submit.prevent="addProductToCart()">
             <AttributeSelections
               v-if="isVariableProduct && product.attributes && product.variations"
               class="mt-4 mb-8"
