@@ -54,15 +54,15 @@ const moveToWishList = () => {
       <div class="inline-flex gap-2 flex-col items-end">
         <QuantityInput :item />
         <div class="text-xs text-gray-400 group-hover:text-gray-700 flex leading-none items-center">
-          <button v-if="storeSettings.showMoveToWishlist" class="mr-2 pr-2 border-r" @click="moveToWishList" type="button">העבר לפריטים שאהבתי</button>
           <button
-            title="Remove Item"
-            aria-label="Remove Item"
+            title="מחק פריט"
+            aria-label="מחק פריט"
             @click="removeItem"
             type="button"
             class="flex items-center gap-1 hover:text-red-500 cursor-pointer">
             <Icon name="ion:trash" class="hidden md:inline-block" size="12" />
           </button>
+          <button v-if="storeSettings.showMoveToWishlist" class="mr-2 pr-2 border-r" @click="moveToWishList" type="button">העבר לפריטים שאהבתי</button>
         </div>
       </div>
     </div>
