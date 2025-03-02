@@ -32,23 +32,23 @@ watch(isFiltersActive, () => {
     <div v-show="isOpen" class="mt-3 grid gap-4 grid-cols-2">
       <div class="flex relative items-center">
         <input
-          id="price-from"
-          v-model="price[0]"
-          class="bg-white border rounded-lg max-w-full border-gray-200 leading-none w-auto p-2 pl-6 md:text-sm"
-          type="number"
-          placeholder="From"
-          min="0" />
-        <label for="price-from" class="leading-none px-2 text-gray-400 absolute" v-html="currencySymbol" />
-      </div>
-      <div class="flex relative items-center">
-        <input
           id="price-to"
           v-model="price[1]"
           class="bg-white border rounded-lg max-w-full border-gray-200 leading-none w-auto p-2 pl-6 md:text-sm"
           type="number"
           placeholder="Up to"
           min="1" />
-        <label for="price-to" class="leading-none px-2 text-gray-400 absolute" v-html="currencySymbol" />
+        <label for="price-to" class="leading-none px-2 text-gray-400 absolute left-0" v-html="currencySymbol" />
+      </div>
+      <div class="flex relative items-center">
+        <input
+          id="price-from"
+          v-model="price[0]"
+          class="bg-white border rounded-lg max-w-full border-gray-200 leading-none w-auto p-2 pl-6 md:text-sm"
+          type="number"
+          placeholder="From"
+          min="0" />
+        <label for="price-from" class="leading-none px-2 text-gray-400 absolute left-0" v-html="currencySymbol" />
       </div>
       <div class="mx-1 mt-1 col-span-full">
         <Slider v-model="price" :tooltips="false" :min="0" :max="maxPrice" ariaLabelledby="price-from price-to" @update="applyPrice" />

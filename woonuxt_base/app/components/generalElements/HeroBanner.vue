@@ -5,9 +5,9 @@
       height="800"
       class="object-cover w-full h-[420px] lg:h-[560px] xl:h-[640px]"
       src="/images/main-banner.jpg"
-      alt="Hero image"
+      alt="בית החיות קריות"
       loading="eager"
-      sizes="sm:100vw md:1400px"
+      sizes="sm:100vw md:1400px lg:1920px xl:2560px"
       fetchpriority="high"
       preload
       placeholder
